@@ -44,4 +44,20 @@
 - <a href="https://getbootstrap.com/docs/5.1/components/tooltips/">Tooltips</a>
 - 실행하기 위해선 JS에서 초기화를 해줘야함
 
-
+---
+# NPM 프로젝트 생성
+- npm bootstrap 설치
+```
+$ npm init -y
+$ npm i parcel-bundler -D
+$ npm i bootstrap
+```
+- js 연결
+- 아래 코드 사용
+```js
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
+```
+- scss 연결
+```scss
+@import "../node_modules/bootstrap/scss/bootstrap.scss"//마지막에.scss 생략 가능(bootstrap.scss)
+```
