@@ -15,4 +15,10 @@
 # Component
 ## Buttons
 - <a href="https://getbootstrap.com/docs/5.1/components/buttons/">Buttons</a>
-- 다양한 buttons 생성 가능
+
+## Dropdowns
+- <a href="https://getbootstrap.com/docs/5.1/components/dropdowns/">Dropdowns</a>
+
+## List group
+- <a href="https://getbootstrap.com/docs/5.1/components/list-group/">List group</a>
+
