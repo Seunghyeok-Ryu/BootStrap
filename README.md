@@ -1,5 +1,6 @@
 # BOOTSTRAP
-<a href="https://getbootstrap.com/">BootSTrap</a>
+- <a href="https://getbootstrap.com/">BootSTrap</a>
+---
 
 ## CSS link Tag
 ```html
@@ -10,3 +11,8 @@
 ```html
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 ```
+---
+# Component
+## Buttons
+- <a href="https://getbootstrap.com/docs/5.1/components/buttons/">Buttons</a>
+- 다양한 buttons 생성 가능
