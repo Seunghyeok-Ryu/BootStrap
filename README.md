@@ -22,3 +22,15 @@
 ## List group
 - <a href="https://getbootstrap.com/docs/5.1/components/list-group/">List group</a>
 
+---
+# Forms
+## Overview
+- <a href="https://getbootstrap.com/docs/5.1/forms/overview/">Overview</a>
+- form이라는 태그로 구성된 code로 손쉽게 깔금한 양식으로 구성 가능(login page, ...)
+
+## Form control
+- <a href="https://getbootstrap.com/docs/5.1/forms/form-control/">Form control</a>
+- 양식의 디자인 조율 가능
+
+## Input group
+- <a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Input group</a>
