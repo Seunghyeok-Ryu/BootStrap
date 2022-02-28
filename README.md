@@ -34,3 +34,7 @@
 
 ## Input group
 - <a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Input group</a>
+
+---
+# Modal
+- <a href="https://getbootstrap.com/docs/5.1/components/modal/">Modal</a>
