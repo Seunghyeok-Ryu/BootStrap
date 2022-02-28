@@ -38,3 +38,10 @@
 ---
 # Modal
 - <a href="https://getbootstrap.com/docs/5.1/components/modal/">Modal</a>
+
+---
+# Tooltips
+- <a href="https://getbootstrap.com/docs/5.1/components/tooltips/">Tooltips</a>
+- 실행하기 위해선 JS에서 초기화를 해줘야함
+
+
