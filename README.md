@@ -86,3 +86,43 @@ $theme-colors: (
 
 @import "../node_modules/bootstrap/scss/bootstrap"
 ```
+
+---
+# 성능 최적화(트리 쉐이킹)
+- 사이트 내 ``Via Javascript`` 확인
+## Dropdown 코드 최적화
+- @popperjs/core 설치
+```
+$ npm i @popperjs/core
+```
+- 기존 코드
+```js
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle'; // bootstrap에서 모든 내용을 import
+```
+- 최적화 코드
+```js
+import Dropdown from 'bootstrap/js/dist/dropdown';    // dropdown 내용만을 import
+
+const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+dropdownElementList.map(function (dropdownToggleEl) {
+  return new Dropdown(dropdownToggleEl)
+})    // code 초기화
+// 모든 code 가 초기화가 필요한 것은 아님 사용시 홈페이지에서 확인
+```
+
+## Modal 코드 최적화
+- 최적화 코드
+- 복사 코드
+```js
+var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+// new bootstrap사용 불가
+// var myModal따로 사용안할시 삭제 가능
+// getElementById 는 querySelector 같은 기능
+// 'myModal'은 index.html에서 id 확인해야함(index.html의 id가 다를시 변경)
+// options 에는 {객체 데이터}로 옵션 적용 가능
+```
+- 최적화 수정 코드
+```js
+import Modal from 'bootstrap/js/dist/modal'
+Modal(document.querySelector('#exampleModal'), options)
+```
