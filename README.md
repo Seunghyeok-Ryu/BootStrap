@@ -61,3 +61,28 @@ import bootstrap from 'bootstrap/dist/js/bootstrap.bundle';
 ```scss
 @import "../node_modules/bootstrap/scss/bootstrap.scss"//마지막에.scss 생략 가능(bootstrap.scss)
 ```
+
+# 테마 색상 커스터마이징
+- <a href="https://getbootstrap.com/docs/5.1/customize/sass/#maps-and-loops">Scss에서 import code 설정</a>
+- <a href="https://getbootstrap.com/docs/5.1/customize/color/">color 커스터마이징</a>
+- scss에서 필수 code 설정
+```scss
+@import "../node_modules/bootstrap/scss/functions";   // 필수
+
+@import "../node_modules/bootstrap/scss/variables";   // 필수
+@import "../node_modules/bootstrap/scss/mixins";    // 필수
+@import "../node_modules/bootstrap/scss/root";    // 필수
+// scss에서 bootstrap 호출 전 필수 code 호출 후 중간에 커스터마이징 코드 삽입
+$theme-colors: (
+  "primary":    red,
+  "secondary":  royalblue,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap"
+```
